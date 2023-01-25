@@ -27,9 +27,8 @@ function getRnd( min, max ) {
 
 //メインの関数
 //着火されるとまずこれが呼び出される
+//mode変数が0か1かでモード先が変わる
 function fire(){
-    //TODO 7だけ赤く表示させたい 20230118
-    
     //回転させる際の挙動
     //1クレジット(20*3円)で回している
     result = document.getElementById("result");
@@ -110,15 +109,15 @@ function fire(){
             reel3.innerHTML = zugara[reReel3 - 1];
         }
 
-        //ST回数減少
-        st--;
-
-        //stが0になったら確変終了なのでmode=0にし通常時に戻る
+        //stが0だったら確変終了なのでmode=0にし通常時に戻る
         //通常時に戻るので背景色も通常に戻る
         if(st == 0){
             mode = 0;
             bgColorSwitch(mode);
         }
+
+        //ST回数減少
+        st--;
     }
 }
 
