@@ -4,7 +4,7 @@ let reel1,reel2,reel3,reReel1,reReel2,reReel3,st,counter,result;
 let mode = 0;
 
 const coin = 20 * 3;
-const bigBonus = 2500;
+const bigBonus = 300;
 
 const zugara = ["🤡","🍋","🍒","🍇","🍘","😀",
                 "<spam style='color:red;font-weight:bold'>7</spam>"];
