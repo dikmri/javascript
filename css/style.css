@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+ul{
+    width: 140px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#A5D6A7;
+}
+li{
+    display: inline;
+    font-size: 28px;
+}
+main{
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #26C6DA;
+}
+#hisList{
+    font-family: "DotGothic16";
+    font-size: 16px;
+}

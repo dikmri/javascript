@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slot</title>
+    <title>tols</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <script src="js/slot.js" defer></script>
 </head>
 <body>
-    <p>テストページです</p>
+    <main id="main">
+        <ul id="reels">
+            <li id="reel1">1</li>
+            <li id="reel2">2</li>
+            <li id="reel3">3</li>
+        </ul>
+        
+        <button onclick="fire();">着火</button>
+        <button onclick="reset();">リセット</button>
+        <p>counter:<span id="counter">0</span></p>
+        <p>result:<span id="result">0</span></p>
+        <textarea name="history" id="hisList" cols="9" rows="5" readonly></textarea>
+    </main>
 </body>
 </html>
